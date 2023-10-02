@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+.header__blur {
+  background: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.div__height {
+  height: calc(100vh - 3rem);
+}
+.gradient___text___color {
+  background: linear-gradient(30deg, #0f172a, #f4c430, #0f172a) 0 0 /400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 15s linear infinite;
+}
+
+.navItems:hover {
+  text-decoration: underline;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 3.5s steps(20, end) forwards infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
